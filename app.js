@@ -1,11 +1,16 @@
+let greet = 'Hello!';
+let greet = 'Hola!'; 
 
-var a="Hell World";
-console.log(a);
+console.log(greet);
 
+let english = { 
+    greetings: { 
+        basic: 'Hello!' 
+    } 
+};
 
+let spanish = {};
 
-if (a === undefined) {
-    console.log('a is undefined');
-}else{
-    console.log('a is defined!');
-}
+spanish.greet = 'Hola!';
+
+console.log(english);
