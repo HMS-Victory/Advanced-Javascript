@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather</title>
+
+    <script>
+        function requestJSONP(url) {
+            //create script with passed in url
+            let script=document.createElement('script');
+            script.src=url;
+
+            //insert script tag into the DOM 
+            let head=document.getElementByTagName('head')[0];
+            head.insertBefore(script, null);
+        }
+
+        function processWeather(data) {
+            console.log(data);
+        }
+
+        let url=""//very complicated and very long, I was not able to copy it
+
+        requestJSONP(url)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
