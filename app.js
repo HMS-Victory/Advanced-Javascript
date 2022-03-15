@@ -1,11 +1,27 @@
+let a = 3;
+console.log(typeof a);
 
-var a="Hell World";
-console.log(a);
+let b = "Hello";
+console.log(typeof b);
 
+let c = {};
+console.log(typeof c);
 
+let d = [];
+console.log(typeof d); // weird!
+console.log(Object.prototype.toString.call(d)); // better!
 
-if (a === undefined) {
-    console.log('a is undefined');
-}else{
-    console.log('a is defined!');
+function Person(name) {
+    this.name = name;
 }
+
+let e = new Person('Jane');
+console.log(typeof e);
+console.log(e instanceof Person);
+
+console.log(typeof undefined); // makes sense
+console.log(typeof null); // a bug since, like, forever...
+
+let z = function() { };
+console.log(typeof z);
+
