@@ -1,11 +1,25 @@
+let people=[
+    {
+        //the john object
+        firstname: 'John',
+        lastname: 'Doe',
+        addresses: [
+            '111 Main St. ',
+            '222 Third St.'
+        ]
+    },
+    {
+        //the jane object
+        firstname:'Jane',
+        lastname:'Doe',
+        addresses: [
+            '333 Main St.',
+            '444 Fifth St.'
+        ],
+        greet: function() {
+            return 'Hello!';
+        }
+    }
+]
 
-var a="Hell World";
-console.log(a);
-
-
-
-if (a === undefined) {
-    console.log('a is undefined');
-}else{
-    console.log('a is defined!');
-}
+console.log(people);
