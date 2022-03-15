@@ -1,11 +1,21 @@
+let 
+    //first name of the person.
+    firstname,
 
-var a="Hell World";
-console.log(a);
+    //last name of the person
+     lastname,
 
+     //the language
+     //can be 'en' or 'es'.
+     language;
 
-
-if (a === undefined) {
-    console.log('a is undefined');
-}else{
-    console.log('a is defined!');
+let person={
+    //the first name
+    firstname: 'John',
+    
+    //the last name
+    //(always required).
+    lastname: 'Doe'
 }
+
+console.log(person);
