@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Events</title>
+        <!-- This was not shown in the video -->
+    <style>
+    </style>
+    </head>
+    <body class="body item">
+        <div class="first item">
+            <div class="second item">
+                <div class="third item">
+                    <!-- <button class="fourth item">Click Me!</button> -->
+                    <intpu type="checkbox" class="fourth item">hello<br>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            let items=document.getElementByClassName("item");
+            for(let i=0; i<items.length; i++) {
+                // we use an immediately invoked function
+                //this is a perfect example of when you want to use a closure
+                //and how to use one. You see we could have just written code here 
+                //without a function, but by using an immediately invoked function
+                //we make sure that variables declared inside are unavailable to other parts of the program
+                //and since it is anonymous there is no chance of it being called elsewhere
+                //This is how you use closures.
+                (function () {
+                    let y=i;
+                    items[y].addEventListener("click", function(event){
+                        alert(y);
+                        if(y===2) {
+                            //stops it from moving on to the next listener
+                            event.stopPropogation();
+                        }
+                        console.log(items[y], event);
+                        //if false it will affect capturing phase
+                    }, true);
+                    //if true it will effect the bubbling phase.
+                    //capturing comes first, followed by the bubbling.
+                })();
+            }
+        </script>
+    </body>
+</html>
