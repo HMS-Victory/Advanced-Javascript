@@ -1,11 +1,9 @@
+var a;
 
-var a="Hell World";
-console.log(a);
+//goes to internet and looks for a value
+a="hi";
 
-
-
-if (a === undefined) {
-    console.log('a is undefined');
-}else{
-    console.log('a is defined!');
+if(a){
+    console.log('something is there');
 }
+
