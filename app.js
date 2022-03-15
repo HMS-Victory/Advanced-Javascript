@@ -1,11 +1,22 @@
+let person=new Object();
 
-var a="Hell World";
-console.log(a);
+person["firstname"]="Tony";
+person['lastname']="Alicea";
 
+let firstNameProperty="firstname";
 
+console.log(person);
+console.log(person[firstNameProperty]);
 
-if (a === undefined) {
-    console.log('a is undefined');
-}else{
-    console.log('a is defined!');
-}
+console.log(person.firstname);
+console.log(person.lastname);
+
+person.address=new Object();
+person.address.street="111 Main St.";
+person.address.city="New York";
+person.address.state="NY";
+
+console.log(person.address.street);
+console.log(person.address.city);
+console.log(person['address']['state']);
+
