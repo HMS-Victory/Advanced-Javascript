@@ -1,11 +1,17 @@
+let arr=[
+    1,
+    false,
+    {
+        nae: 'Tony',
+        address: '111 Main St'
+    },
+    function(name) {
+        let greeting='Hello';
+        console.log(greeting+name);
+    },
+    "hello"
+];
 
-var a="Hell World";
-console.log(a);
+console.log(arr);
+arr[3](arr[2].name);
 
-
-
-if (a === undefined) {
-    console.log('a is undefined');
-}else{
-    console.log('a is defined!');
-}
