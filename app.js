@@ -1,11 +1,10 @@
+let objectLiteral={
+    firstname: 'Mary',
+    isAProgrammer: true
+};
 
-var a="Hell World";
-console.log(a);
+console.log(JSON.stringify(objectLiteral));
 
+var jsonValue=JSON.parse('{"firstname": "Mary", "isAProgrammer": true}');
 
-
-if (a === undefined) {
-    console.log('a is undefined');
-}else{
-    console.log('a is defined!');
-}
+console.log(jsonValue);
