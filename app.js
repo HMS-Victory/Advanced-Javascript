@@ -1,11 +1,24 @@
+let person={
+    firstname: 'Tony',
+    lastname: 'Alicea',
+    address: {
+        street: '111 Main St',
+        city: 'New York',
+        state: 'NY'
+    }
+};
 
-var a="Hell World";
-console.log(a);
-
-
-
-if (a === undefined) {
-    console.log('a is undefined');
-}else{
-    console.log('a is defined!');
+function greet(person){
+    console.log('Hi' + person.firstname);
 }
+greet(Tony);
+greet({ 
+    firstname: 'Mary',
+     lastname: 'Doe'
+    });
+
+Tony.address2={
+    street: '333 Second St.'
+}
+
+console.log(person);
