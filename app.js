@@ -1,11 +1,44 @@
-
-var a="Hell World";
-console.log(a);
-
-
-
-if (a === undefined) {
-    console.log('a is undefined');
-}else{
-    console.log('a is defined!');
+var person = {
+    firstname: 'Default',
+    lastname: 'Default',
+    getFullName: function() {
+        return this.firstname + ' ' + this.lastname;  
+    }
 }
+
+var john = {
+    firstname: 'John',
+    lastname: 'Doe'
+}
+
+// don't do this EVER! for demo purposes only!!!
+john.__proto__ = person;
+
+for(let prop in john){
+    if(john.hasOwnProperty(prop)){
+        console.log(prop + ': '+john[prop]);
+    }
+}
+
+let jane={
+    address: '111 Main St.',
+    getFormalFullName: function() {
+        return this.lastname+ ', '+this.firstname;
+    }
+}
+
+let jim={
+    getFirstName: function() {
+        return firstname;
+    }
+}
+
+_.extend(john, jane, jim);
+
+console.log(john);
+
+
+
+
+
+
