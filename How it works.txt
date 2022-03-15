@@ -1,0 +1,38 @@
+Phases{
+    Functions --->{
+    Code is parsed, and memory-space is set up.
+    Execution.
+    function is called->NEW EXECUTION CONTEXT IS CREATED. {
+            -variable environment to hold variables
+            -Outer environment for scopr chain
+            -this keyword is set up, referancing the containing execution context.
+            -arguments all the values of all the parameters you pass to a function.
+        }
+    }
+    Variables --->{
+    Code is parsed, variables are set to undefined in this step
+    Execution, variables are now defined.
+    }
+}
+
+-Variable Environment- Where the variables live. How they relate to each other in memory.
+
+-If you add one number to a string, the number will be coerced into becoming a string.
+
+-FUNCTIONS ARE OBJECTS IN JAVASCRIPT. 
+
+-when you use a function as a variable it takes on properties of avariable, likeno hoisting, and returning a value.
+
+-if you set a variable to another variable containing an object, you are not creating a copy,
+you are creating another referance to the same value.
+
+-Every time a function is executed it creates a NEW execution context.
+
+
+OBJECTS have inheritance, which means that objects inside
+an object are accessable by a simple dot operator for the
+original object and the name of the property inside the
+other object. this can be called a prototype chain.
+
+Everything in JS is either an object or a primitive.
+

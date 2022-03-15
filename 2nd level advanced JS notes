@@ -1,0 +1,3 @@
+STRICT MODE- is very helful for catching errors and tells exactly where the single variable is being misspelled.
+
+PASS BY REFERENCE- Objects and functions are passed by reference, but primitive type are passed by value.
