@@ -1,11 +1,17 @@
-
-var a="Hell World";
-console.log(a);
-
-
-
-if (a === undefined) {
-    console.log('a is undefined');
-}else{
-    console.log('a is defined!');
+// long running function
+function waitThreeSeconds() {
+    var ms = 3000 + new Date().getTime();
+    while (new Date() < ms){}
+    console.log('finished function');
 }
+
+function clickHandler() {
+    console.log('click event!');   
+}
+
+// listen for the click event
+document.addEventListener('click', clickHandler);
+
+
+waitThreeSeconds();
+console.log('finished execution');
