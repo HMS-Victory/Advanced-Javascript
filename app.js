@@ -1,11 +1,7 @@
-
-var a="Hell World";
-console.log(a);
-
-
-
-if (a === undefined) {
-    console.log('a is undefined');
-}else{
-    console.log('a is defined!');
+function greet(name){
+    name=name || '<Your name here>';//Will return the value that is true.
+    console.log('Hello'+ name);
 }
+
+greet('Tony');
+greet();
