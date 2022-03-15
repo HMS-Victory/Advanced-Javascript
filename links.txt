@@ -1,0 +1,10 @@
+Strict Mode Overview
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
+Equality comparisons and sameness
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness
+TypeScript, translates next gen js into last gen js so that it can run on more browsers.
+https://www.typescriptlang.org/
+ES6 in depth, to learn all of the new features of next gen javaScript.
+https://github.com/lukehoban/es6features
+Find out about future lectures for upcoming languages.
+https://www.youtube.com/tonyalicea

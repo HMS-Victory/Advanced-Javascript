@@ -1,0 +1,86 @@
+Syntax_Parsers- A program that reads your code and determines   
+what it does and if its grammer is valid.
+
+Lexical_Environment-Where something sits physically in the 
+code you write is important.(Lexical means having to do with words or 
+grammer. A lexical environment exists in programmming exists
+ in programming languages in which where you write something 
+ is important).
+
+EXECUTION_CONTEXT- A wrapper to help manage the codethat is running
+Thereare lots of lexical environments. Which one is currently
+running is amnaged via execution contexts. It can contain
+things beyond what you've written in your code.
+
+Name/Value Pair- A name which maps to a unique value. (The name 
+may be defined more than once, but only can have one valuein any
+ given context).
+
+ Object- A collection of name value pairs.
+
+Single_Threaded-One command is executed at a time.
+
+SYNCHRONOUS_Execution-One at a time and in order.
+
+INVOCATION-Running a function.
+
+DYNAMIC TYPING- You don't tell the engine what type of
+ data a variable holds, it figures it out while your code
+  is running.
+
+PRIMITIVE TYPE- a type of data that represents a single value.
+
+OPERATORS- A special function that is written differently.
+
+OPERATOR PRESEDENCE- Which operator function gets called first.
+
+ASSOCIATIVITY- What order operator functions get called in left-to-right or right to left.
+
+COERCION- converting a value from one type to another.
+
+STRICT EQUALS-will return false if two things are not the same type,
+ whether or not they usually coerce to the same value.
+
+NAMESPACE- A container for variables and functions.
+
+FIRST CLASS FUNCTIONS-everything you can do with other types, you can do with functions.
+
+EXPRESSION- A unit of code that results in a value.
+
+MUTATE- to change something. Immutable means it cannot be changed.
+
+ARGUMENTS- the parameters you pass to a function. js gives you a keyword of the same name referancing them all.
+
+WHITESPACE- invisible characters that create literal 'space' in your written code.
+
+CLOSURES-a function that references variables in the outer scope
+from its inner scope. The closure preserves the outer scope inside
+its inner scope. To understand the closures, you need to know how
+the lexical scoping works first.
+
+CALLBACK FUNCTION- a function you give to another function to be
+run when the other function is finished.
+
+FUNCTION CURRYING: creating a copy of a function but with some preset parameters.
+
+INHERITANCE- one object gets access to the properties and methods of another object.
+
+REFLECTION- an object can look at itself listing anfd changing its properties and methods.
+
+FUNCTION CONSTRUCTORS- a normal function 
+that is used to construct objects.
+
+POLYFILL:code that adds a feature which the engine may lack.
+
+SYNTACTIC SUGAR: a different way to type do something
+that deosn't change how it works under the hood.
+
+Method Chaining- calling one method after another, and 
+each method affects the parent object.
+
+TRANSPILE- convert the syntax of one language to another.
+
+THENABLE OBJECT- an object that has a 'then' function.
+
+SYNTACTIC SUGER- features that make writing code more efficient and clean to make programmer's lives easier.
+
