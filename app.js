@@ -1,11 +1,23 @@
+function greet(firstname, lastname, language) {
+        
+    language=language || 'en';
 
-var a="Hell World";
-console.log(a);
+    if(language==='en') {
+        console.log('Hello', +firstname+ ' ' + lastname);
+    }
 
-
-
-if (a === undefined) {
-    console.log('a is undefined');
-}else{
-    console.log('a is defined!');
+    if(language==='es') {
+        console.log('Hola', +firstname+ ' ' + lastname);
+    }
 }
+
+function greetEnglish(firstname, lastname) {
+    greet(firstname, lastname, 'en');
+}
+
+function greetSpanish(firstname, lastname){
+    greet(firstname, lastname, 'es');
+}
+
+greeEnglish('John', 'Doe', 'en');
+greetSpanish('John', 'Doe', 'es');
